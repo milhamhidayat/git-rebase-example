@@ -16,3 +16,8 @@ const (
 	// Square is the fourth button
 	Square
 )
+
+func (c Controller) String() string {
+	controllers := [...]string{"Unknown", "Triangle", "Circle", "Square"}
+	return controllers[c]
+}
