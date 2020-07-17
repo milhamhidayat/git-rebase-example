@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"git-rebase-example/controller"
+)
 
 func main() {
-	fmt.Println("this is main")
+	var newController controller.Controller
+	newController = controller.Square
+	fmt.Println(newController)
 }

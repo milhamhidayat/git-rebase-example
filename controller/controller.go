@@ -18,6 +18,6 @@ const (
 )
 
 func (c Controller) String() string {
-	controllers := [...]string{"Unknown", "Triangle", "Circle", "Square"}
+	controllers := [...]string{"Unknown", "Triangle", "Circle", "Cross", "Square"}
 	return controllers[c]
 }
