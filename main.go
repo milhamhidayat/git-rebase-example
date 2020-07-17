@@ -6,7 +6,9 @@ import (
 )
 
 func main() {
-	var newController controller.Controller
-	newController = controller.Square
-	fmt.Println(newController)
+	var buttonArrow controller.Controller
+	buttonArrow = controller.Right
+	fmt.Println("========  ========")
+	fmt.Printf("%+v\n", buttonArrow)
+	fmt.Println("=================")
 }
