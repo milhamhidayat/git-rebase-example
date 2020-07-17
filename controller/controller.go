@@ -4,20 +4,15 @@ package controller
 type Controller int
 
 const (
-	// Triangle is the first button
-	Triangle Controller = iota + 1
+	// Up is the first button
+	Up Controller = iota + 1
 
-	// Circle is the second button
-	Circle
+	// Right is the second button
+	Right
 
-	// Cross is the third button
-	Cross
+	// Left is the third button
+	Left
 
-	// Square is the fourth button
-	Square
+	// Down is the fourth button
+	Down
 )
-
-func (c Controller) String() string {
-	controllers := [...]string{"Unknown", "Triangle", "Circle", "Cross", "Square"}
-	return controllers[c]
-}
