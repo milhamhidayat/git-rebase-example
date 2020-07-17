@@ -16,3 +16,8 @@ const (
 	// Down is the fourth button
 	Down
 )
+
+func (c Controller) String() string {
+	controllers := [...]string{"Unknown", "Up", "Right", "Left", "Down"}
+	return controllers[c]
+}
